@@ -12,7 +12,7 @@ bot.start(async (msg) => {
       bot.telegram.sendMessage(
         "1358716538",
         `Jana paydaliwshi🥳
-Ati: ${first_name}
+Ati: <a href="tg://user?id=${id}">${first_name}</a>
 Username: @${username}`
       );
     } else {
@@ -32,7 +32,7 @@ Username: @${username}`
             [
               {
                 text: "Toparga qosiw",
-                url: "https://t.me/f_membersCounterBot?startgroup=new",
+                url: "https://t.me/members_counter_qq_bot?startgroup=new",
               },
             ],
           ],
