@@ -5,7 +5,7 @@ const express = require("express");
 const app = express()
 const { bot } = require("./core/bot");
 
-mongoose.connect(process.env.MONGO_DB).then(() => {
+mongoose.connect("mongodb+srv://Farkhat:developer1228@cluster0.liub89b.mongodb.net/counter_members_bot").then( async() => {
   app.use(
       await bot.createWebhook({
         domain: "https://counter_bot.onrender.com",
