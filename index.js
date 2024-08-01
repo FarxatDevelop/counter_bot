@@ -11,5 +11,6 @@ mongoose.connect(process.env.MONGO_DB).then(() => {
         domain: "https://members-counter-bot.onrender.com",
       })
     );
+  app.listen(4000, () => console.log("Listening on port", 4000));
   bot.launch();
 });
