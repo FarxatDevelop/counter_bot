@@ -8,7 +8,7 @@ const { bot } = require("./core/bot");
 mongoose.connect(process.env.MONGO_DB).then(() => {
   app.use(
       await bot.createWebhook({
-        domain: "https://members-counter-bot.onrender.com",
+        domain: "https://counter_bot.onrender.com",
       })
     );
   app.listen(4000, () => console.log("Listening on port", 4000));
